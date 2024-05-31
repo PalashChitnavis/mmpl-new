@@ -8,7 +8,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className="w-full h-full bg-blue-950 flex">
+    <div className="w-full h-full bg-blue-950 flex sticky top-0 z-50">
       <div className="w-1/3 h-full flex justify-start items-center pl-2">
         <img className="h-[90%]" src="/public/logo-placeholder.png" alt="" />
       </div>
@@ -52,7 +52,7 @@ const NavBar = () => {
         />
       </div>
       <div
-        className={`top-[40vh] rounded-xl right-0 w-64 bg-blue-950 border-white border-2  text-white fixed  ease-in-out duration-300 z-40 ${
+        className={`top-[30vh] rounded-xl right-0 w-64 bg-blue-950 border-white border-2  text-white fixed  ease-in-out duration-300 z-40 ${
           sideMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >
