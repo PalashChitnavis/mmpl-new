@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const [sideMenu, setSideMenu] = useState(false);
 
@@ -14,25 +15,25 @@ const NavBar = () => {
       </div>
       <div className="w-3/4 h-full justify-evenly items-center text-xl text-white hidden md:flex ">
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          Home
+          <Link to="/">Home</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          About Us
+          <Link to="/about-us">About Us</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          Our Products
+          <Link to="/products">Our Products</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          Company Presentation
+          <Link to="/presentation">Company Presentation</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          Brochure
+          <Link to="/brochure">Brochure</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          ISO Certification
+          <Link to="/iso">ISO Certification</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          Contact Us
+          <Link to="/contact-us">Contact Us</Link>
         </div>
       </div>
       <div className="flex w-3/4 pr-3 text-white h-full justify-end items-center md:hidden">
@@ -52,54 +53,75 @@ const NavBar = () => {
         />
       </div>
       <div
-        className={`top-[30vh] rounded-xl right-0 w-64 bg-blue-950 border-white border-2  text-white fixed  ease-in-out duration-300 z-40 ${
-          sideMenu ? "translate-x-0" : "translate-x-full"
+        className={`top-0  left-0 w-64 h-[100vh] bg-blue-950  text-white fixed  ease-in-out duration-300 z-40 ${
+          sideMenu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="p-5 flex flex-col justify-center items-center w-full gap-5 h-full text-xl">
+        <div className="w-full h-12 flex justify-end items-center">
+          {" "}
+          <IoCloseSharp
+            onClick={toggleClick}
+            className={`size-16 pt-2 ${
+              sideMenu ? "opacity-100" : "opacity-0"
+            } transition-all duration-500 ease-in-out absolute`}
+          />
+        </div>
+
+        <div className="w-full h-12">
+          <img src="/public/logo-placeholder.png" alt="" />
+        </div>
+
+        <div className="p-5 flex flex-col justify-center items-center w-full gap-5 h-full text-xl z-50">
           <div
             onClick={toggleClick}
             className="hover:text-orange-600  transition-all duration-500 hover:pb-3  cursor-pointer border-b-2"
           >
-            Home
+            <Link to="/">Home</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600  transition-all duration-500 hover:pb-3 border-b-2  cursor-pointer"
           >
-            About Us
+            <Link to="/about-us">About Us</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 transition-all duration-500 hover:pb-3 border-b-2  cursor-pointer"
           >
-            Our Products
+            <Link to="/products">Our Products</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600  transition-all duration-500 hover:pb-3 border-b-2 cursor-pointer"
           >
-            Company Presentation
+            <Link to="/presentation">Company Presentation</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 transition-all duration-500 hover:pb-3 border-b-2 cursor-pointer"
           >
-            Brochure
+            <Link to="/brochure">Brochure</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 border-b-2 transition-all duration-500 hover:pb-3  cursor-pointer"
           >
-            ISO Certification
+            <Link to="/iso">ISO Certification</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 border-b-2 transition-all duration-500 hover:pb-3  cursor-pointer"
           >
-            Contact Us
+            <Link to="/contact-us">Contact Us</Link>
           </div>
         </div>
+        <div
+          className={`fixed top-0 w-[100vh] left-64 h-[100vh] opacity-50 bg-gray-700  ${
+            sideMenu ? "block" : "hidden"
+          }`}
+          onClick={toggleClick}
+          onScroll={toggleClick}
+        ></div>
       </div>
     </div>
   );

@@ -44,9 +44,15 @@ const Counter = ({ icon: Icon, target, label }) => {
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col justify-evenly items-center">
-      <div className="w-full px-5">
-        Welcome to <br />
-        <span className="text-xl font-bold">Macro Metals</span>
+      <div className="w-full px-5 bg-rose-200">
+        <span className="text-xl md:text-4xl">Welcome to</span> <br />
+        <span className="text-3xl md:text-6xl font-bold">Macro Metals</span>
+        <br />
+        <span className="text-xs md:text-lg flex w-40 md:w-64">
+          Thank you for visiting Macro Metals . Our company was established in
+          the year 1998 by qualified technocrats and has been active in
+          manufacture & supply of various grade & type of fasteners.
+        </span>
       </div>
       <div className="w-full bg-slate-300">
         <div className="w-full flex justify-center items-center py-3 text-xl md:text-2xl font-bold">
@@ -60,10 +66,10 @@ const Home = () => {
           <Counter icon={FaGlobe} target={500} label="SKUs" />
         </div>
       </div>
-      <div className="flex flex-wrap w-[95%] mt-3 rounded-xl bg-yellow-100 p-3 gap-2 md:gap-0">
-        <div className="flex w-full md:w-[50%] justify-evenly gap-2 md:border-r-2 border-black border-b-2 md:border-b-0 pb-2">
+      <div className="flex flex-wrap w-[95%] mt-3 rounded-xl bg-blue-100 p-3 gap-2 md:gap-0">
+        <div className="flex w-full items-center md:w-[50%] justify-evenly gap-2 md:border-r-2 border-black border-b-2 md:border-b-0 pb-2">
           <img
-            className="w-[40%] h-[80%] rounded-xl hover:scale-110 transition-all duration-300"
+            className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
             src="/public/bolts-screw.png"
             alt="bolts-and-screws"
           />
@@ -80,7 +86,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full md:w-[50%] justify-center gap-2 md:border-l-2 border-black border-b-2 md:border-b-0 pb-2">
+        <div className="flex items-center w-full md:w-[50%] justify-evenly gap-2 md:border-l-2 border-black border-b-2 md:border-b-0 pb-2">
           <div className="flex flex-col gap-4 md:gap-10 items-center w-[50%]">
             <span className="font-bold  text-xl underline md:text-2xl ">
               Stud Bolts
@@ -94,14 +100,14 @@ const Home = () => {
             </div>
           </div>
           <img
-            className="w-[40%] h-[80%]  rounded-xl"
+            className="w-[40%] h-[60%] md:h-[80%] rounded-xl transition-all duration-300"
             src="/public/stud-bolts.png"
             alt="bolts-and-screws"
           />
         </div>
-        <div className="flex w-full md:w-[50%] justify-center gap-2 md:border-r-2  border-black border-b-2 md:border-b-0 pb-2">
+        <div className="flex items-center w-full md:w-[50%] justify-evenly gap-2 md:border-r-2  border-black border-b-2 md:border-b-0 pb-2">
           <img
-            className="w-[40%] h-[80%] rounded-xl hover:scale-110 transition-all duration-300"
+            className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
             src="/public/nuts.png"
             alt="nuts"
           />
@@ -118,7 +124,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full md:w-[50%] justify-center gap-4 md:border-l-2 border-black border-b-2 md:border-b-0 pb-2">
+        <div className="flex items-center w-full md:w-[50%] justify-evenly gap-2 md:border-l-2 border-black border-b-2 md:border-b-0 pb-2">
           <div className="flex flex-col gap-2 md:gap-10 items-center w-[50%]">
             <span className="font-bold  text-xl underline md:text-2xl ">
               Washer
@@ -132,12 +138,13 @@ const Home = () => {
             </div>
           </div>
           <img
-            className="w-[40%] h-[80%] rounded-xl hover:scale-110 transition-all duration-300"
+            className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
             src="/public/washers.png"
             alt="washer"
           />
         </div>
       </div>
+      <div>Company</div>
     </div>
   );
 };
