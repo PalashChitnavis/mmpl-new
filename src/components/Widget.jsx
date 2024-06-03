@@ -12,7 +12,7 @@ const Widget = () => {
         className="bg-black w-full h-full flex justify-center items-center rounded-full border-2 border-white"
         onClick={toggle}
       >
-        <img src="/public/intercom-icon.svg" className="w-[80%] h-[80%]" />
+        <img src="/intercom-icon.svg" className="w-[80%] h-[80%]" />
       </div>
       <div
         className={`fixed right-0 bottom-0 w-40 h-40 md:w-52 md:h-52 ${

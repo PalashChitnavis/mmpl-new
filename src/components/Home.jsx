@@ -70,7 +70,7 @@ const Home = () => {
         <div className="flex w-full items-center md:w-[50%] justify-evenly gap-2 md:border-r-2 border-black border-b-2 md:border-b-0 pb-2">
           <img
             className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
-            src="/public/bolts-screw.png"
+            src="/bolts-screw.png"
             alt="bolts-and-screws"
           />
           <div className="flex flex-col gap-4 md:gap-10 items-center w-[50%]">
@@ -101,14 +101,14 @@ const Home = () => {
           </div>
           <img
             className="w-[40%] h-[60%] md:h-[80%] rounded-xl transition-all duration-300"
-            src="/public/stud-bolts.png"
+            src="/stud-bolts.png"
             alt="bolts-and-screws"
           />
         </div>
         <div className="flex items-center w-full md:w-[50%] justify-evenly gap-2 md:border-r-2  border-black border-b-2 md:border-b-0 pb-2">
           <img
             className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
-            src="/public/nuts.png"
+            src="/nuts.png"
             alt="nuts"
           />
           <div className="flex flex-col gap-4 md:gap-10 items-center w-[50%]">
@@ -139,7 +139,7 @@ const Home = () => {
           </div>
           <img
             className="w-[40%] h-[60%] md:h-[80%] rounded-xl  transition-all duration-300"
-            src="/public/washers.png"
+            src="/washers.png"
             alt="washer"
           />
         </div>

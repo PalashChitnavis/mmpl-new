@@ -1,9 +1,8 @@
 import React from "react";
-import Marquee from "react-fast-marquee";
 const AboutUs = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
-      <div className="bg-[url('/public/about-banner.jpg')] bg-cover flex justify-center items-center text-6xl text-white underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-60">
+      <div className="bg-[url('/about-banner.jpg')] bg-cover flex justify-center items-center text-6xl text-white underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-60">
         About Us
       </div>
       <div className="w-[95vw] rounded-xl md:py-5 md:px-10 h-full bg-blue-100 m-5 border-2 border-black flex flex-col md:flex-row">
@@ -49,7 +48,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-[95%] flex justify-center items-center m-auto p-3 md:w-1/2">
-          <img src="/public/about-img.jpg" alt="" className="rounded-xl" />
+          <img src="/about-img.jpg" alt="" className="rounded-xl" />
         </div>
       </div>
     </div>
