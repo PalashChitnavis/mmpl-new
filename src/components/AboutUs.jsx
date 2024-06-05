@@ -43,9 +43,6 @@ const AboutUs = () => {
             We wish to grow with the continuous trust and support of our
             customers.
           </div>
-          <div className="w-full flex justify-end  text-2xl">
-            - Tushar Chitnavis
-          </div>
         </div>
         <div className="w-[95%] flex justify-center items-center m-auto p-3 md:w-1/2">
           <img src="/about-img.jpg" alt="" className="rounded-xl" />

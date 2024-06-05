@@ -5,6 +5,7 @@ import Widget from "./components/Widget";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
+import Products from "./components/Products";
 function App() {
   return (
     <div className="w-full h-full">
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <div className="w-full">
         <Footer />
