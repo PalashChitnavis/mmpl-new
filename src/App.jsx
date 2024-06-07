@@ -3,10 +3,16 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Widget from "./components/Widget";
 import Footer from "./components/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
+import { useEffect } from "react";
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="w-full h-full">
       <div className="w-full h-[20vh] md:h-[8vh]">

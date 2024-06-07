@@ -7,7 +7,16 @@ const Footer = () => {
         Copyright © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
         Macro Metals Pvt Ltd
       </div>{" "}
-      <div> Design and Developed by Palash Chitnavis</div>
+      <span className="hidden  text-center md:flex justify-center items-center">
+        ||
+      </span>
+      <div>
+        {" "}
+        Design and Developed by{" "}
+        <a href="https://www.linkedin.com/in/palash-chitnavis/" target="_blank">
+          Palash Chitnavis
+        </a>
+      </div>
     </div>
   );
 };

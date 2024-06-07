@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { FaHandshake, FaUsers, FaGlobe } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-
+import { Link } from "react-router-dom";
 const Counter = ({ icon: Icon, target, label }) => {
   const [count, setCount] = useState(target);
   const { ref, inView } = useInView({ threshold: 0.5 });
@@ -82,7 +83,7 @@ const Home = () => {
               quality products in a timely and efficient manner.
             </div>
             <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:scale-110 hover:underline-offset-8 cursor-pointer  border-2 p-2 rounded-xl border-orange-600 bg-orange-600 text-white  hover:bg-white ">
-              Our Products
+              <Link to="/products">Our Products</Link>
             </div>
           </div>
         </div>
@@ -96,7 +97,7 @@ const Home = () => {
               manufacturer of high-quality stud bolts.
             </div>
             <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:scale-110 hover:underline-offset-8 cursor-pointer  border-2 p-2 rounded-xl border-orange-600 bg-orange-600 text-white  hover:bg-white ">
-              Our Products
+              <Link to="/products">Our Products</Link>
             </div>
           </div>
           <img
@@ -120,7 +121,7 @@ const Home = () => {
               Forged Serrated Flange Nuts.
             </div>
             <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:scale-110 hover:underline-offset-8 cursor-pointer  border-2 p-2 rounded-xl border-orange-600 bg-orange-600 text-white  hover:bg-white ">
-              Our Products
+              <Link to="/products">Our Products</Link>
             </div>
           </div>
         </div>
@@ -134,7 +135,7 @@ const Home = () => {
               meet your requirement.
             </div>
             <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:scale-110 hover:underline-offset-8 cursor-pointer  border-2 p-2 rounded-xl border-orange-600 bg-orange-600 text-white  hover:bg-white ">
-              Our Products
+              <Link to="/products">Our Products</Link>
             </div>
           </div>
           <img
@@ -144,7 +145,6 @@ const Home = () => {
           />
         </div>
       </div>
-      <div>Company</div>
     </div>
   );
 };

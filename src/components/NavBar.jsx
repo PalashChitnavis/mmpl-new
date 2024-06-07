@@ -11,7 +11,10 @@ const NavBar = () => {
   return (
     <div className="w-full h-full bg-blue-950 flex sticky top-0 z-50">
       <div className="w-1/3 h-full flex justify-start items-center pl-2">
-        <img className="h-[90%]" src="/logo-placeholder.png" alt="" />
+        <Link className="h-[90%]" to="/">
+          {" "}
+          <img className="h-full" src="/logo-placeholder.png" alt="" />
+        </Link>
       </div>
       <div className="w-3/4 h-full justify-evenly items-center text-xl text-white hidden md:flex ">
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
