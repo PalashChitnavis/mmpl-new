@@ -2,35 +2,13 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { FaHandshake, FaUsers, FaGlobe } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
+
 import { Link } from "react-router-dom";
 const Counter = ({ icon: Icon, target, label }) => {
   const [count, setCount] = useState(target);
-  const { ref, inView } = useInView({ threshold: 0.5 });
-
-  useEffect(() => {
-    if (inView) {
-      let start = 0;
-      const end = target;
-      if (start === end) return;
-
-      let incrementTime = end / 1000;
-
-      const timer = setInterval(() => {
-        start = start + 1;
-        setCount((prev) => {
-          if (prev >= end) {
-            clearInterval(timer);
-            return end;
-          }
-          return start;
-        });
-      }, incrementTime);
-    }
-  }, [inView, target]);
 
   return (
-    <div ref={ref}>
+    <div>
       <div className="flex justify-center items-center gap-1 md:gap-5">
         <Icon className="size-8 md:size-20" />
         <span className="text-lg md:text-4xl">{count} + </span>
