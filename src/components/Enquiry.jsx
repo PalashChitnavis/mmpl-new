@@ -30,18 +30,18 @@ const Enquiry = () => {
   return (
     <div className="z-100 w-full h-full cursor-pointer ">
       <div
-        className=" w-full h-full flex justify-center items-center rounded-full border-2 border-white"
+        className=" w-full h-full flex justify-center items-center "
         onClick={toggle}
       >
         <img src="/enquiry.png" className="" />
       </div>
       <div
-        className={`fixed right-0 top-[10%] w-[80%] md:w-[30%] h-4/5  ${
+        className={`fixed right-0 top-[10%] w-[80%] md:w-[30%] h-[80%]  ${
           active ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-500 transition-all`}
       >
-        <div className="w-full flex flex-col h-full bg-slate-300 border-2 border-black rounded-tl-xl rounded-bl-xl ">
-          <div className="w-full h-12 ">
+        <div className="w-full gap-2 flex flex-col h-full bg-slate-300 border-2 border-black rounded-tl-xl rounded-bl-xl ">
+          <div className="w-full h-[7%]">
             <IoCloseSharp
               onClick={toggle}
               className="text-black cursor-pointer text-[40px] absolute left-0 md:text-[50px]"
@@ -52,11 +52,11 @@ const Enquiry = () => {
           </div>
           <form
             action=""
-            className="flex w-full flex-col pt-2 gap-3 items-center"
+            className="flex w-full h-[70%] gap-3 flex-col  items-center"
             ref={form}
             onSubmit={sendEmail}
           >
-            <label className="w-full gap-2 flex flex-col items-center">
+            <label className="w-full flex flex-col items-center">
               <div className="w-[80%] text-xl ">
                 Name <span className="text-red-500">*</span>
                 <br />
@@ -69,7 +69,7 @@ const Enquiry = () => {
                 name="name"
               />
             </label>
-            <label className="w-full gap-2 flex flex-col items-center">
+            <label className="w-full  flex flex-col items-center">
               <div className="w-[80%] text-xl ">
                 Email <span className="text-red-500">*</span>
                 <br />
@@ -82,7 +82,7 @@ const Enquiry = () => {
                 name="email"
               />
             </label>
-            <label className="w-full gap-2 flex flex-col items-center">
+            <label className="w-full  flex flex-col items-center">
               <div className="w-[80%] text-xl ">
                 Phone Number <span className="text-red-500">*</span>
                 <br />
@@ -95,7 +95,7 @@ const Enquiry = () => {
                 name="phone"
               />
             </label>
-            <label className="w-full gap-2 flex flex-col items-center">
+            <label className="w-full  flex flex-col items-center">
               <div className="w-[80%] text-xl ">
                 Message <span className="text-red-500">*</span>
                 <br />
@@ -107,7 +107,7 @@ const Enquiry = () => {
                 name="message"
               />
             </label>
-            <div className="w-full flex justify-center items-center py-2 ">
+            <div className="w-full flex justify-center items-center ">
               <button
                 type="submit"
                 value="Send"
@@ -117,7 +117,7 @@ const Enquiry = () => {
               </button>
             </div>
           </form>
-          <div className="w-full py-2 flex flex-col gap-3 justify-center items-center">
+          <div className="w-full h-[13%] flex flex-col  justify-center items-center">
             <div className="w-[80%] flex justify-start text-xl font-semibold underline underline-offset-4">
               Contact Information
             </div>

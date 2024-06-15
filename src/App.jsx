@@ -10,6 +10,8 @@ import Enquiry from "./components/Enquiry";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Contact from "./components/Contact";
+import PDFRender from "./components/PDFRender";
 function App() {
   const { pathname } = useLocation();
 
@@ -35,6 +37,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/presentation" element={<PDFRender type={0} />} />
+        <Route path="/quality" element={<PDFRender type={1} />} />
+        <Route path="/vision" element={<PDFRender type={2} />} />
+        <Route path="/iso" element={<PDFRender type={3} />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <div className="w-full">
         <Footer />

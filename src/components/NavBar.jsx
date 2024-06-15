@@ -27,36 +27,16 @@ const NavBar = () => {
           <Link to="/products">Our Products</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1WR8724r2lJHg3iW6cHR3DNwWk3fPdkZq/view?usp=sharing"
-          >
-            Company Presentation
-          </a>
+          <Link to="/presentation">Company Presentation</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          <a
-            href="https://drive.google.com/file/d/1TFZeVjlVDzOTm45xzelcTTAMlsx4p4sn/view?usp=sharing"
-            target="_blank"
-          >
-            Quality Policy
-          </a>
+          <Link to="/quality">Quality Policy</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          <a
-            href="https://drive.google.com/file/d/1A1bFB29CCdM1yoGmEF-hVa4ihX7putJu/view?usp=sharing"
-            target="_blank"
-          >
-            Vision and Mission
-          </a>
+          <Link to="/vision">Vision and Mission</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
-          <a
-            href="https://drive.google.com/file/d/12d_Pcdj5RdVQDPz1YUQLxFVo_nn_aJIK/view?usp=sharing"
-            target="_blank"
-          >
-            ISO Certificate
-          </a>
+          <Link to="/iso">ISO Certificate</Link>
         </div>
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
           <Link to="/contact-us">Contact Us</Link>
@@ -120,45 +100,25 @@ const NavBar = () => {
             onClick={toggleClick}
             className="hover:text-orange-600  transition-all duration-500 hover:pb-3 border-b-2 cursor-pointer"
           >
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1WR8724r2lJHg3iW6cHR3DNwWk3fPdkZq/view?usp=sharing"
-            >
-              Company Presentation
-            </a>
+            <Link to="/presentation">Company Presentation</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 transition-all duration-500 hover:pb-3 border-b-2 cursor-pointer"
           >
-            <a
-              href="https://drive.google.com/file/d/1TFZeVjlVDzOTm45xzelcTTAMlsx4p4sn/view?usp=sharing"
-              target="_blank"
-            >
-              Quality Policy
-            </a>
+            <Link to="/quality">Quality Policy</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 transition-all duration-500 hover:pb-3 border-b-2 cursor-pointer"
           >
-            <a
-              href="https://drive.google.com/file/d/1A1bFB29CCdM1yoGmEF-hVa4ihX7putJu/view?usp=sharing"
-              target="_blank"
-            >
-              Vision and Mission
-            </a>
+            <Link to="/vision">Vision and Mission</Link>
           </div>
           <div
             onClick={toggleClick}
             className="hover:text-orange-600 border-b-2 transition-all duration-500 hover:pb-3  cursor-pointer"
           >
-            <a
-              href="https://drive.google.com/file/d/12d_Pcdj5RdVQDPz1YUQLxFVo_nn_aJIK/view?usp=sharing"
-              target="_blank"
-            >
-              ISO Certificate
-            </a>
+            <Link to="/iso">ISO Certificate</Link>
           </div>
           <div
             onClick={toggleClick}

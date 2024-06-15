@@ -23,15 +23,26 @@ const Counter = ({ icon: Icon, target, label }) => {
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col justify-evenly items-center">
-      <div className="w-full px-5 bg-rose-200">
-        <span className="text-xl md:text-4xl">Welcome to</span> <br />
-        <span className="text-3xl md:text-6xl font-bold">Macro Metals</span>
-        <br />
-        <span className="text-xs md:text-lg flex w-40 md:w-64">
-          Thank you for visiting Macro Metals . Our company was established in
-          the year 1998 by qualified technocrats and has been active in
-          manufacture & supply of various grade & type of fasteners.
-        </span>
+      <div className="w-full px-5 bg-rose-200 flex justify-between">
+        <div>
+          <span className="text-xl md:text-4xl">Welcome to</span> <br />
+          <span className="text-3xl md:text-6xl font-bold">Macro Metals</span>
+          <br />
+          <span className="text-xs md:text-lg flex w-40 md:w-64">
+            Thank you for visiting Macro Metals . Our company was established in
+            the year 1998 by qualified technocrats and has been active in
+            manufacture & supply of various grade & type of fasteners.
+          </span>
+        </div>
+        {/* <div>
+          <video
+            src="../../public/video.mp4"
+            autoPlay
+            muted
+            loop
+            className="w-48"
+          />
+        </div> */}
       </div>
       <div className="w-full bg-slate-300">
         <div className="w-full flex justify-center items-center py-3 text-xl md:text-2xl font-bold">
