@@ -3,7 +3,9 @@ const AboutUs = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       <div className="bg-[url('/about-banner.jpg')] bg-cover flex justify-center items-center text-6xl text-white underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-60">
-        About Us
+        <span className="w-full h-full bg-black flex justify-center items-center bg-opacity-30">
+          About Us
+        </span>
       </div>
       <div className="w-[95vw] rounded-xl md:py-5 md:px-10 h-full bg-blue-100 m-5 border-2 border-black flex flex-col md:flex-row">
         <div className="w-[90%] justify-between  m-auto md:m-0 md:w-1/2 flex flex-col gap-4 text-lg">

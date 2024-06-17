@@ -24,8 +24,10 @@ const Products = () => {
 
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
-      <div className="bg-[url('/products.jpg')] bg-cover flex justify-center items-center text-6xl  underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-32 text-white">
-        Our Products
+      <div className="bg-[url('/products.jpg')] bg-cover flex justify-center items-center text-6xl  underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-32 text-white ">
+        <span className="w-full h-full bg-black flex justify-center items-center bg-opacity-30">
+          Our Products
+        </span>
       </div>
       <div className="w-[95vw] rounded-xl py-5  md:px-10 h-full bg-blue-100 m-5 border-2 border-black flex ">
         <div className="w-[90%] justify-between  m-auto flex flex-col gap-4 text-lg">

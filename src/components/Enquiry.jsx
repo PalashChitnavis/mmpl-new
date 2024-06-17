@@ -15,7 +15,7 @@ const Enquiry = () => {
     e.preventDefault();
     console.log(form.current);
     emailjs
-      .sendForm("service_y24q6g6", "template_brpbllp", form.current, {
+      .sendForm("service_z45dxo7", "template_brpbllp", form.current, {
         publicKey: "jLCw50KfCUvavTnTu",
       })
       .then(
@@ -28,7 +28,7 @@ const Enquiry = () => {
       );
   };
   return (
-    <div className="z-100 w-full h-full cursor-pointer ">
+    <div className=" z-100 w-full h-full cursor-pointer ">
       <div
         className=" w-full h-full flex justify-center items-center "
         onClick={toggle}
@@ -36,7 +36,7 @@ const Enquiry = () => {
         <img src="/enquiry.png" className="" />
       </div>
       <div
-        className={`fixed right-0 top-[10%] w-[80%] md:w-[30%] h-[80%]  ${
+        className={`fixed right-0 top-[10%] w-[80%] md:w-[30%] h-full  ${
           active ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-500 transition-all`}
       >
@@ -52,7 +52,7 @@ const Enquiry = () => {
           </div>
           <form
             action=""
-            className="flex w-full h-[70%] gap-3 flex-col  items-center"
+            className="flex w-full gap-3 flex-col  items-center"
             ref={form}
             onSubmit={sendEmail}
           >
@@ -117,24 +117,42 @@ const Enquiry = () => {
               </button>
             </div>
           </form>
-          <div className="w-full h-[13%] flex flex-col  justify-center items-center">
+          <div className="w-full  flex flex-col  justify-center items-center">
             <div className="w-[80%] flex justify-start text-xl font-semibold underline underline-offset-4">
               Contact Information
             </div>
+
             <div className="w-full flex justify-center items-center flex-col">
-              <a
-                className="flex w-[80%] justify-start items-center gap-2 "
+              <div
+                className="flex w-[80%] justify-start gap-3 items-center "
                 href="tel:+919850098535"
               >
                 <FaPhoneAlt className="text-orange-600" />
-                <span className="md:text-xl">+91 9850098535</span>
-              </a>
+                <div className="flex flex-col justify-center items-center gap-1">
+                  <a
+                    className="md:text-xl flex"
+                    href="tel:+918805613500"
+                    target="_blank"
+                  >
+                    +91 8805613500
+                  </a>
+
+                  <a
+                    className="md:text-xl flex"
+                    href="tel:+918805603500"
+                    target="_blank"
+                  >
+                    +91 8805603500
+                  </a>
+                </div>
+              </div>
+
               <a
                 className="flex w-[80%] justify-start items-center gap-2 "
-                href="mailto:tusharchitnavis@gmail.com"
+                href="mailto:info@macrometals.com"
               >
                 <IoMdMail className="text-orange-600" />
-                <span className="md:text-xl">tusharchitnavis@gmail.com</span>
+                <span className="md:text-xl">info@macrometals.com</span>
               </a>
             </div>
           </div>

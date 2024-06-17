@@ -26,7 +26,9 @@ const Contact = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       <div className="bg-[url('/about-img.jpg')] bg-cover flex justify-center items-center text-6xl text-white underline underline-offset-8 font-semibold bg-center bg-no-repeat  w-full h-60">
-        Contact Us
+        <span className="w-full h-full bg-black flex justify-center items-center bg-opacity-30">
+          Contact Us
+        </span>
       </div>
       <div className="w-[95vw]  rounded-xl md:py-5 md:px-10 bg-blue-100 m-5 border-2 border-black flex flex-col ">
         <div className="w-[90%] h-[10%] justify-between  m-auto md:m-0 flex flex-col gap-4 text-lg">
@@ -161,12 +163,16 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="w-full mt-5 mb-5 rounded-xl flex justify-center items-center">
+        <div
+          className="w-full mt-5 mb-5 rounded-xl flex justify-center items-center"
+          id="map"
+        >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.324117904112!2d73.18945477498022!3d19.181040782045276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7935d1d07884d%3A0x9422637620cf7413!2sMacro%20Metals%20Private%20Limited!5e0!3m2!1sen!2sin!4v1718417795123!5m2!1sen!2sin"
             allowfullscreen=""
             className="w-[85vw] h-[400px] "
             loading="lazy"
+            id="map"
           ></iframe>
         </div>
       </div>

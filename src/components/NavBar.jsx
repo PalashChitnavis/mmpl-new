@@ -10,13 +10,13 @@ const NavBar = () => {
 
   return (
     <div className="w-full h-full bg-blue-950 flex sticky top-0 z-50">
-      <div className="w-1/3 h-full flex justify-start items-center pl-2">
-        <Link className="h-[90%]" to="/">
+      <div className="w-1/2 md:w-1/6 h-full flex justify-start items-center pl-3">
+        <Link className="h-[90%] bg-white rounded-full" to="/">
           {" "}
-          <img className="h-full" src="/logo-placeholder.png" alt="" />
+          <img className="h-full" src="/logo.png" alt="" />
         </Link>
       </div>
-      <div className="w-11/12 h-full justify-evenly items-center text-xl text-white hidden md:flex ">
+      <div className="w-full justify-evenly items-center text-xl text-white hidden md:flex ">
         <div className="hover:text-orange-600 hover:underline transition-all duration-300 hover:pb-3 hover:underline-offset-8 cursor-pointer">
           <Link to="/">Home</Link>
         </div>
@@ -73,11 +73,21 @@ const NavBar = () => {
           />
         </div>
 
-        <div className="w-full h-12">
-          <img src="/logo-placeholder.png" alt="" />
+        <div className="w-full  flex justify-start items-center ">
+          <Link
+            className="h-[90%] w-full flex justify-center items-center rounded-full"
+            to="/"
+          >
+            {" "}
+            <img
+              className="h-full bg-white rounded-full"
+              src="/logo.png"
+              alt=""
+            />
+          </Link>
         </div>
 
-        <div className="p-5 flex flex-col justify-center items-center w-full gap-5 h-full text-xl z-50">
+        <div className="flex flex-col justify-start py-7 gap-5 items-center w-full  h-full text-xl z-50">
           <div
             onClick={toggleClick}
             className="hover:text-orange-600  transition-all duration-500 hover:pb-3  cursor-pointer border-b-2"

@@ -30,7 +30,7 @@ function App() {
       <div className="h-12 w-12  fixed bottom-4 right-4">
         <Widget />
       </div>
-      <div className="h-12 w-12 fixed top-[50%] right-0">
+      <div className="h-20 w-12 fixed top-[50%] right-0">
         <Enquiry />
       </div>
       <Routes>

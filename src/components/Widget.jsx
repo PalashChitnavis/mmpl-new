@@ -47,7 +47,7 @@ const Widget = () => {
                 <a
                   target="_blank"
                   className="flex flex-col justify-center items-center"
-                  href="mailto:tusharchitnavis@gmail.com"
+                  href="mailto:info@macrometals.com"
                 >
                   <img
                     className="w-10 h-10 md:w-12 md:h-12"
@@ -63,7 +63,7 @@ const Widget = () => {
                 <a
                   target="_blank"
                   className="flex flex-col justify-center items-center"
-                  href="tel:+919850098535"
+                  href="tel:+918805603500"
                 >
                   <img
                     className="w-10 h-10 md:w-12 md:h-12"

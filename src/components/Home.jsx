@@ -4,56 +4,68 @@ import React, { useState, useEffect } from "react";
 import { FaHandshake, FaUsers, FaGlobe } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-const Counter = ({ icon: Icon, target, label }) => {
-  const [count, setCount] = useState(target);
-
-  return (
-    <div>
-      <div className="flex justify-center items-center gap-1 md:gap-5">
-        <Icon className="size-8 md:size-20" />
-        <span className="text-lg md:text-4xl">{count} + </span>
-      </div>
-      <span className="w-full flex justify-center items-center font-bold text-xl">
-        {label}
-      </span>
-    </div>
-  );
-};
 
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col justify-evenly items-center">
-      <div className="w-full px-5 bg-rose-200 flex justify-between">
-        <div>
-          <span className="text-xl md:text-4xl">Welcome to</span> <br />
-          <span className="text-3xl md:text-6xl font-bold">Macro Metals</span>
+      <div className="w-full -z-10  items-center relative  flex justify-between">
+        <div className="relative z-10 px-3 md:px-5 bg-opacity-5 py-10 md:py-32 bg-slate-400 w-full h-full text-white">
+          <span className="text-2xl w-full md:text-4xl drop-shadow-md">
+            Welcome to
+          </span>{" "}
           <br />
-          <span className="text-xs md:text-lg flex w-40 md:w-64">
-            Thank you for visiting Macro Metals . Our company was established in
-            the year 1998 by qualified technocrats and has been active in
-            manufacture & supply of various grade & type of fasteners.
+          <span className="text-4xl w-[20ch] text-nowrap md:text-6xl font-bold drop-shadow-md">
+            Macro Metals
+          </span>
+          <br />
+          <span className="text-sm md:text-lg flex  w-[40ch]">
+            An ISO 9001-2015 Certified Company
           </span>
         </div>
-        {/* <div>
+        <div className="w-full h-full">
           <video
-            src="../../public/video.mp4"
+            src="/final-video.mp4"
             autoPlay
             muted
             loop
-            className="w-48"
+            className="absolute top-0 left-0  w-full h-full object-cover z-0"
           />
-        </div> */}
+        </div>
       </div>
       <div className="w-full bg-slate-300">
         <div className="w-full flex justify-center items-center py-3 text-xl md:text-2xl font-bold">
           Let the numbers speak for us :
         </div>
         <div className="flex justify-evenly pb-2">
-          <Counter icon={FaHandshake} target={200} label="Clients" />
+          <div>
+            <div className="flex justify-center items-center gap-1 md:gap-5">
+              <FaHandshake className="size-8 md:size-20" />
+              <span className="text-lg md:text-4xl">100 + </span>
+            </div>
+            <span className="w-full flex justify-center items-center font-bold text-xl">
+              Clients
+            </span>
+          </div>
           <div className="border-2 border-solid mb-3"></div>
-          <Counter icon={FaUsers} target={50} label="Employees" />
+          <div>
+            <div className="flex justify-center items-center gap-1 md:gap-5">
+              <FaUsers className="size-8 md:size-20" />
+              <span className="text-lg md:text-4xl">50 + </span>
+            </div>
+            <span className="w-full flex justify-center items-center font-bold text-xl">
+              Employees
+            </span>
+          </div>
           <div className="border-2 border-solid mb-3"></div>
-          <Counter icon={FaGlobe} target={500} label="SKUs" />
+          <div>
+            <div className="flex justify-center items-center gap-1 md:gap-5">
+              <FaGlobe className="size-8 md:size-20" />
+              <span className="text-lg md:text-4xl">2 +</span>
+            </div>
+            <span className="w-full flex justify-center items-center font-bold text-xl">
+              Locations
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap w-[95%] mt-3 rounded-xl bg-blue-100 p-3 gap-2 md:gap-0">
